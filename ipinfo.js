@@ -3,6 +3,7 @@ import { renderOfFices } from "./postoffice.js"
 const fetchBTN = document.getElementById('fetchbtn')
 const ip_content_div = document.getElementById('ip-content')
 const contetntdiv =document.getElementById('content')
+const postofficediv= document.querySelector('.post-office-container')
 export async function GetIpInfo(){
         
     const url=`https://api.ipify.org/?format=json`
@@ -13,6 +14,7 @@ export async function GetIpInfo(){
     GetIpDetails(ipaddress )
     ip_content_div.removeAttribute('style')
     contetntdiv.removeAttribute('style')
+    postofficediv.removeAttribute('style')
 }
 
 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST OFFICE LOCATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="ip-container">
+            <h2>MY Public IP ADDRESS : <span id="ipaddress"></span></h2>
+            <button id="fetchbtn">GET DATA</button>
+            <div id="ip-content" style="display:none">
+                <div id="ip-content-container">
+                    <p>Lat : <span id="lat"></span></p>
+                    <p>City : <span id="city"></span></p>
+                    <p>Organization : <span id="organization"></span></p>
+                    <p>Long : <span id="long"></span></p>
+                    <p>Host Name : <span id="hostname"></span></p>
+                    <p>Region : <span id="region"></span></p>
+                </div>
+                <div id="map-container"></div>
+                <div id="content" style="display:none">
+                        <p>Time Zone: <span id="timezone"></span></p>
+                        <p>Time and Date: <span id="time"></span></p>
+                        <p>Pincode: <span id="pincode"></span></p>
+                        <p>Message: <span id="message"></span></p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="post-office-container" >
+            <div class="filter-container">
+                <input type="text" placeholder="Filter" id ="filter">
+            </div>
+
+            <div id="info-offices">
+                <div class="office-container">
+                    <p>Name</p>
+                    <p>Branch Type</p>
+                    <p>Delivery Status</p>
+                    <p>District</p>
+                    <p>Divison</p>
+                </div>
+        </div>
+
+    
+
+    </div>
+    <script src="script.js" type ="module"></script>
+</body>
+</html>

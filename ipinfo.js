@@ -105,7 +105,7 @@ function RenderinfoDetails(lattiude,longitude,city,organization,hostname,region,
     document.getElementById('organization').innerText=organization;
     document.getElementById('hostname').innerText=hostname;
     document.getElementById('region').innerText=region;
-    document.getElementById('timezone').innerText=time;
+    document.getElementById('timezone').innerText=timezone;
     document.getElementById('time').innerText=`${date} & ${time} `
     document.getElementById('pincode').innerText=postalCode;
 

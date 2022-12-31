@@ -92,7 +92,22 @@ body{
 }
 
 @media only screen and (max-width: 600px){
+    .ip-container h2{
+        font-size: 20px;
+    }
+    #ip-content-container{
+        grid-template-columns: auto;
+    }
+    #ip-content-container p{
+        font-size:15px;
+
+    }
+    #content{
+        font-size: 15px;
+    }
     #info-offices{
+        display: grid;
+        grid-template-columns: auto auto;
         grid-template-columns: auto ;
     }
 

@@ -10,7 +10,7 @@ export async function GetIpInfo(){
     const response= await fetch(url)
     const  data = await response.json()
     fetchBTN.style.display="none"
-    ipaddress = data.ip
+    const ipaddress = data.ip
     GetIpDetails(ipaddress )
     ip_content_div.removeAttribute('style')
     contetntdiv.removeAttribute('style')

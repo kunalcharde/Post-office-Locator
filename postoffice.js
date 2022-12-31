@@ -3,14 +3,14 @@ export async function renderOfFices(pincode){
     const Url =`https://api.postalpincode.in/pincode/${pincode}`
     let feetching = await fetch(Url);
     let response = await feetching.json();
-    console.log(response[0].PostOffice);
+    // console.log(response[0].PostOffice);
     document.getElementById('message').innerText=response[0].Message
     locateOffice(response[0].PostOffice)
 }
 function locateOffice(array){
     const parentElement = document.getElementById("info-offices")
     array.map((data)=>{
-        console.log(data.Name)
+        // console.log(data.Name)
         let Office_Container =document.createElement('div')
         Office_Container.classList.add('office-container')
         let PElement1 = document.createElement("p")

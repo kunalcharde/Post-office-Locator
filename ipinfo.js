@@ -26,7 +26,7 @@ async function GetIpDetails(IP_Address){
             const URL2=`https://ipinfo.io/${IP_Address}/geo`
             let Response = await fetch(URL1)
             const data = await Response.json()
-            console.log(data)
+            // console.log(data)
             var lattiude = data.latitude,
             longitude = data.longitude,
             city= data.city,
@@ -39,7 +39,7 @@ async function GetIpDetails(IP_Address){
             date = cureenttime[0],
             Actualtime = cureenttime[1].split("."),
             time= Actualtime[0];
-            console.log(time)
+            // console.log(time)
             RenderinfoDetails(lattiude,longitude,city,organization,hostname,region,timeZone,time,date,postalCode)
             rendermap(lattiude,longitude)
             renderOfFices(postalCode)
